@@ -2,11 +2,15 @@
   <img src="https://www.androidauthority.com/wp-content/uploads/2023/12/Gemini-Google-Logo.jpg" width="100%" alt="Gemini Google Logo" style="border-radius: 10px;">
 
   # Gemini Telegram Bot Template
-  ### My First Python Project | Built with aiogram 3
+  ### My First Python Project | Built with aiogram 
 </div>
 
 ---
-
+## Just create a .env file in the project folder, then write
+```
+BOT_TOKEN=YOURTOKEN 
+GEMINI_API_KEY=YOUR GOOGLE API
+```
 ## Description
 This is my debut project in **Python** development. It is a high-performance Telegram bot that integrates the **Google Gemini Pro** API to provide intelligent responses, analyze images, and assist with coding tasks.
 
