@@ -1,7 +1,7 @@
 <div align="center">
   <img src="https://www.androidauthority.com/wp-content/uploads/2023/12/Gemini-Google-Logo.jpg" width="100%" alt="Gemini Google Logo" style="border-radius: 10px;">
 
-  # Gemini Telegram Bot
+  # Gemini Telegram Bot Template
   ### My First Python Project | Built with aiogram 3
 </div>
 
