@@ -7,8 +7,9 @@ from aiogram.filters import Command
 from dotenv import load_dotenv
 import google.generativeai as genai
 
- 
+
 load_dotenv()
+
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 GEMINI_KEY = os.getenv("GEMINI_API_KEY")
 MODEL_NAME = "gemini-1.5-pro"
@@ -18,19 +19,16 @@ MSG_START = "Спрашивай что угодно."
 MSG_EMPTY = "Gemini прислал пустой ответ."
 MSG_ERROR = "Произошла ошибка доступа. Попробуй включить VPN на компьютере и перезапустить бота."
 
-
 if not BOT_TOKEN or not GEMINI_KEY:
     print("Ошибка: Ключи не найдены в переменных окружения!")
 
+# Инициализация бота и модели
 session = AiohttpSession()
-
-# Настройка Gemini
-genai.configure(api_key=GEMINI_KEY)
-model = genai.GenerativeModel(MODEL_NAME)
-
-# Инициализация бота
 bot = Bot(token=BOT_TOKEN, session=session)
 dp = Dispatcher()
+
+genai.configure(api_key=GEMINI_KEY)
+model = genai.GenerativeModel(MODEL_NAME)
 
 
 @dp.message(Command("start"))
